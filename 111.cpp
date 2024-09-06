@@ -5,9 +5,9 @@
 int main()
 {
   std::string s = "qoeudbduwiwgsuxjshdowpqosksbdjcjsishwgqgdieidvdiwjdvdiqowowoeur";
-  std::vector<int> count(26, 0); // ³õÊ¼»¯Ò»¸ö´óĞ¡Îª26µÄÊı×é£¬ÓÃÓÚ¼ÇÂ¼Ã¿¸ö×ÖÄ¸µÄ³öÏÖ´ÎÊı
+  std::vector<int> count(26, 0); // åˆå§‹åŒ–ä¸€ä¸ªå¤§å°ä¸º26çš„æ•°ç»„ï¼Œç”¨äºè®°å½•æ¯ä¸ªå­—æ¯çš„å‡ºç°æ¬¡æ•°
 
-  // ±éÀú×Ö·û´®£¬¼ÇÂ¼Ã¿¸ö×ÖÄ¸µÄ³öÏÖ´ÎÊı
+  // éå†å­—ç¬¦ä¸²ï¼Œè®°å½•æ¯ä¸ªå­—æ¯çš„å‡ºç°æ¬¡æ•°
   for (char c : s)
   {
     if (c >= 'a' && c <= 'z')
@@ -19,7 +19,7 @@ int main()
   int maxCount = 0;
   char maxChar = 'a';
 
-  // ±éÀú¼ÆÊıÊı×é£¬ÕÒµ½³öÏÖ´ÎÊı×î¶àµÄ×ÖÄ¸
+  // éå†è®¡æ•°æ•°ç»„ï¼Œæ‰¾åˆ°å‡ºç°æ¬¡æ•°æœ€å¤šçš„å­—æ¯
   for (int i = 0; i < 26; i++)
   {
     if (count[i] > maxCount)
@@ -29,7 +29,7 @@ int main()
     }
   }
 
-  std::cout << "³öÏÖ´ÎÊı×î¶àµÄ×ÖÄ¸ÊÇ: " << maxChar << ", ³öÏÖ´ÎÊı: " << maxCount << std::endl;
+  std::cout << "å‡ºç°æ¬¡æ•°æœ€å¤šçš„å­—æ¯æ˜¯: " << maxChar << ", å‡ºç°æ¬¡æ•°: " << maxCount << std::endl;
 
   return 0;
 }
